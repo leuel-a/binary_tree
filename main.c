@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	BinaryTree *tree = malloc(sizeof(BinaryTree));
+	binary_tree_t *tree = malloc(sizeof(binary_tree_t));
 
 	insert(tree, 23);
 	insert(tree, 10);

@@ -8,7 +8,7 @@
  *
  * Return: Nothing
  */
-void insert(BinaryTree *tree, int value)
+void insert(binary_tree_t *tree, int value)
 {
 	if (tree->root == NULL)
 	{
@@ -27,7 +27,7 @@ void insert(BinaryTree *tree, int value)
  *
  * Return: Nothing
  */
-void insert_helper(TreeNode *node, int value)
+void insert_helper(tree_node_t *node, int value)
 {
 	if (node->value > value)
 	{
@@ -54,9 +54,9 @@ void insert_helper(TreeNode *node, int value)
  *
  * Return: a pointer to the created node
  */
-TreeNode *create_node(int value, TreeNode *left, TreeNode *right)
+tree_node_t *create_node(int value, tree_node_t *left, tree_node_t *right)
 {
-	TreeNode *node = malloc(sizeof(TreeNode));
+	tree_node_t *node = malloc(sizeof(tree_node_t));
 
 	node->value = value;
 	node->left = left;

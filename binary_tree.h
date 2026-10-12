@@ -4,37 +4,37 @@
 #include <stdlib.h>
 
 /**
- * struct TreeNode - a binary tree node
+ * struct tree_node - a binary tree node
  *
  * @value: value to be in the node
  * @left: the left child of the node
  * @right: the right child of the node
  */
-typedef struct TreeNode
+typedef struct tree_node
 {
 	int value;
-	struct TreeNode *left;
-	struct TreeNode *right;
-} TreeNode;
+	struct tree_node *left;
+	struct tree_node *right;
+} tree_node_t;
 
 /**
- * struct BinaryTree - a binary tree
+ * struct binary_tree - a binary tree
  *
  * @root: the root of the binary tree
  */
-typedef struct BinaryTree
+typedef struct binary_tree
 {
-	struct TreeNode *root;
-} BinaryTree;
+	struct tree_node *root;
+} binary_tree_t;
 
-void insert(BinaryTree *tree, int value);
-void insert_helper(TreeNode *node, int value);
-TreeNode *create_node(int value, TreeNode *left, TreeNode *right);
+void insert(binary_tree_t *tree, int value);
+void insert_helper(tree_node_t *node, int value);
+tree_node_t *create_node(int value, tree_node_t *left, tree_node_t *right);
 
-int count_nodes(BinaryTree *tree);
-int count_helper(TreeNode *node);
+int count_nodes(binary_tree_t *tree);
+int count_helper(tree_node_t *node);
 
-int *inorder_traversal(BinaryTree *tree, int n);
-void inorder_traversal_helper(TreeNode *node, int *i, int *inorder_list);
+int *inorder_traversal(binary_tree_t *tree, int n);
+void inorder_traversal_helper(tree_node_t *node, int *i, int *inorder_list);
 
 #endif

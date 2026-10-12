@@ -13,7 +13,7 @@ gcc -Wall -Wextra -g main.c binary_tree.c traversal.c helpers.c -o main
 #include "binary_tree.h"
 
 int main(void) {
-    BinaryTree *root = malloc(sizeof(BinaryTree));
+    binary_tree_t *root = malloc(sizeof(binary_tree_t));
 
     insert(root, 8);
     insert(root, 7);

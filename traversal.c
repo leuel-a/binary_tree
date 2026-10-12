@@ -8,7 +8,7 @@
  *
  * Return: a pointer to the location of the inorder travesal list
  */
-int *inorder_traversal(BinaryTree *tree, int n)
+int *inorder_traversal(binary_tree_t *tree, int n)
 {
 	int i = 0;
 	int *inorder_list = (int *)malloc(sizeof(int) * n);
@@ -26,7 +26,7 @@ int *inorder_traversal(BinaryTree *tree, int n)
  *
  * Return: Nothing
  */
-void inorder_traversal_helper(TreeNode *node, int *i, int *inorder_list)
+void inorder_traversal_helper(tree_node_t *node, int *i, int *inorder_list)
 {
 	if (node == NULL)
 	{

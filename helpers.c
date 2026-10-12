@@ -7,7 +7,7 @@
  *
  * Return: the number of nodes in the tree
  */
-int count_nodes(BinaryTree *tree)
+int count_nodes(binary_tree_t *tree)
 {
 	if (tree == NULL || tree->root == NULL)
 	{
@@ -23,7 +23,7 @@ int count_nodes(BinaryTree *tree)
  *
  * Return: the number of nodes in this sub-tree
  */
-int count_helper(TreeNode *node)
+int count_helper(tree_node_t *node)
 {
 	if (node == NULL)
 	{
